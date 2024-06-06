@@ -73,12 +73,12 @@ function ggetw(lat, lo,d) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log("data of weather"+data);
+      console.log(data);
       let curtemp =  Math.floor(data.main.temp - 273.15);
 
       let pre = data.main.pressure;
       let we = [];
-      // let dtb=document.querySelector(".detailsapi")
+      
       
       for (i = 0; i < data.weather.length; i++) {
         let tmp = data.weather[i];
