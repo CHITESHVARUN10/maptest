@@ -58,6 +58,7 @@ function getcity(lat, lo) {
         state: stateName,
         country: countryName
       };
+      console.log(data);
       console.log(" obj of geo loct"+data);
       ggetw(lat, lo,objrct);
     })
